@@ -1,4 +1,4 @@
-package com.example.mixin;
+package com.sakunoki.mixin;
 
 import net.minecraft.network.ClientConnection;
 import net.minecraft.server.PlayerManager;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerManager.class)
-public class PlayerManagerMixin {
+public class PlayerJoinMixin {
 	@Inject(at = @At("RETURN"), method = "onPlayerConnect")
 	private void onPlayerConnect(ClientConnection connection, ServerPlayerEntity player, CallbackInfo info) {
 		player.sendMessage(Text.literal("§a[Foot Loot Mod] §fMod Active! Walk around to drop items!"), false);

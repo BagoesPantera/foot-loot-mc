@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.sakunoki.FootLootMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.sakunoki.FootLootModClient"
 		]
 	},
 	"mixins": [
